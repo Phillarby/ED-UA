@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="Import\UA_1_LBL" />
   </ItemGroup>
   <ItemGroup />

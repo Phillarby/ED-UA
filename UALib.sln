@@ -7,9 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UALib", "UALib\UALib.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA", "UA\UA.csproj", "{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analysis", "Analysis", "{97520CA6-852B-4F49-8694-2CA9D207A612}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assets", "Assets\Assets.csproj", "{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8449B69B-D4C5-4FC7-B0C6-B8EA9DCA8612}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Dropbox\Phils\ED Sounds\Imports\UA_1_LBL = ..\..\..\..\Dropbox\Phils\ED Sounds\Imports\UA_1_LBL
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
