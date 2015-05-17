@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UALib", "UALib\UALib.csproj", "{1BFA7B36-9973-4AFA-B96E-B2EF372C8F1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA", "UA\UA.csproj", "{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}"
