@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UALib", "UALib\UALib.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA", "UA\UA.csproj", "{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analysis", "Analysis", "{97520CA6-852B-4F49-8694-2CA9D207A612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assets", "Assets\Assets.csproj", "{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,10 @@ Global
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
