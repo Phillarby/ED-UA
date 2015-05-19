@@ -9,7 +9,7 @@ namespace UALib
 {
     public static class Import
     {
-        static string ImportPath = @"C:\Users\larbyp\Dropbox\Phils\ED Sounds\Imports";
+        static string ImportPath = @".\ImportFiles" ;
 
         public static void go()
         {
@@ -31,6 +31,7 @@ namespace UALib
             List<Howl> Howls = new List<Howl>();
             List<Purr> Purrs = new List<Purr>();
             List<Chitter> Chitters = new List<Chitter>();
+            List<string> Notes = new List<string>();
             string Author;
             string Description;
             string System;
@@ -59,6 +60,10 @@ namespace UALib
                     case "t":
                         Captured = DateTime.Parse(elements[2]);
                         break;
+                    case "N":
+                    case "n":
+                        Notes.Add(elements[2].Substring(2));
+                        break;
                     case "h": //It's a howl
                     case "H":
                         Howls.Add(new Howl(
@@ -78,7 +83,7 @@ namespace UALib
                             double.Parse(elements[0]),                          //Start Time
                             double.Parse(elements[1]),                          //End Time
                             int.Parse(elements[2].Substring(1,1)),              //Tone Identifier
-                            elements[2].Substring(2,1) == "q" ? true : false,   //Is it a quiet tone
+                            elements[2].Length == 3 && elements[2].Substring(2, 1) == "q" ? true : false,   //Is it a quiet tone
                             null));                                             //Don't have frequency data at the moment
                         break;
                     default: throw new Exception("oh shit, what the hell is that?");

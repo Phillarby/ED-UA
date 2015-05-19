@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UALib", "UALib\UALib.csproj", "{1BFA7B36-9973-4AFA-B96E-B2EF372C8F1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA", "UA\UA.csproj", "{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assets", "Assets\Assets.csproj", "{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8449B69B-D4C5-4FC7-B0C6-B8EA9DCA8612}"
 	ProjectSection(SolutionItems) = preProject
@@ -28,10 +24,6 @@ Global
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4683E7B7-28AA-4C02-98A0-B92F59E0FA12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

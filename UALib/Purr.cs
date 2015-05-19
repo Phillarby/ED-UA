@@ -22,9 +22,6 @@ namespace UALib
             Frequency = frequency;
             Quiet = Quiet; 
         }
-
-       
-
     }
 
 
