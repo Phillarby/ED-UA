@@ -42,6 +42,7 @@
     <Compile Include="Chitter.cs" />
     <Compile Include="Howl.cs" />
     <Compile Include="Import.cs" />
+    <Compile Include="Note.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purr.cs" />
     <Compile Include="Segment.cs" />

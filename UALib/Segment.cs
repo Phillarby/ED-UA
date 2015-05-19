@@ -10,15 +10,18 @@ namespace UALib
     {
         public LinkedList<Purr> Purrs;  //Bits in the sequence.  
         public Howl Howl;               //The type of the howl from the END of the sequence
+        public Chitter Chitter;
         public int Index;               //The position of this segment in the sequence (Zero Indexed)
 
         public Segment(
             int pos,
-            Howl howl,
-            Purr[] purrs)
+            Purr[] purrs,
+            Chitter chitter = null,
+            Howl howl = null)
         {
             Index = pos;
             Howl = howl;
+            Chitter = chitter;
 
             //Init purrs container and add purrs
             Purrs = new LinkedList<Purr>();
