@@ -13,6 +13,7 @@ namespace UALib
         public DateTime End { get; private set; }
         public float? Frequency { get; private set; }
         public bool Quiet { get; private set; }
+        public int Position { get; set; }
 
         public Purr(double start, double end, int? identifier, bool quiet = false, float? frequency = null)
         {

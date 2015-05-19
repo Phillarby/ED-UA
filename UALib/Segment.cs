@@ -25,8 +25,21 @@ namespace UALib
 
             //Init purrs container and add purrs
             Purrs = new LinkedList<Purr>();
-            for (int i = 0; i < purrs.Length; i++)
-                Purrs.AddLast(purrs[i]);
+            for (int j = 0; j < purrs.Length; j++)
+                Purrs.AddLast(purrs[j]);
+
+            //Set position based on start timing
+            int i = 0;
+            var pl = purrs.OrderBy(x => x.Start).ToList(); 
+            foreach (Purr pu in pl) pu.Position = i++;
+
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            Purrs.OrderBy(x => x.Position).ToList().ForEach(x => { sb.Append(x.Position); });
+            return sb.ToString();
         }
 
         //Get the number of bits in the segment
