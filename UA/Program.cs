@@ -75,8 +75,47 @@ namespace UA
                     Console.WriteLine();
                 }
 
-            }
+                //Bit lengths
+                Console.WriteLine();
+                title = "Average Purr Lengths (milliseconds):";
+                Console.WriteLine(title);
+                for (int i = 1; i <= 4; i++)
+                {
+                    //Get the average number of milliseconds
+                    double ms = seq.Segments.SelectMany(x => x.Purrs).Where(x => x.Identifer == i)
+                        .Select(x => new TimeSpan(x.End.Ticks - x.Start.Ticks).TotalMilliseconds).Average();
 
+                    Console.WriteLine(String.Format("bit {1}: {0}", ms, i ));
+                }
+
+                //Bit lengths by segment
+                Console.WriteLine();
+                title = "Average Purr Lengths by segment (milliseconds):";
+                Console.WriteLine(title);
+                Console.WriteLine("\t\tp1\tp2\tp3\tp4");
+
+                for (int s = 0; s < seq.Segments.Count; s++)
+                {
+
+                    Console.Write(String.Format("Segment {0}: \t", s));
+
+                    //Console.WriteLine(String.Format("Segment {0}", s));
+                    for (int i = 1; i <= 4; i++)
+                    {
+                        double ms = 0;
+                        //Get the average number of milliseconds
+                        if (seq.Segments.Where(x => x.Index == s).SelectMany(x => x.Purrs).Where(x => x.Identifer == i).Count() >= 1)
+                        {
+                            ms = seq.Segments.Where(x => x.Index == s).SelectMany(x => x.Purrs).Where(x => x.Identifer == i)
+                                .Select(x => new TimeSpan(x.End.Ticks - x.Start.Ticks).TotalMilliseconds).Average();
+                        }
+                        string sn = ms.ToString();
+                        Console.Write(String.Format("{0}\t", 
+                            sn.Substring(0, sn.Length >= 4 ? 4 : sn.Length), i));
+                    }
+                    Console.WriteLine();
+                }
+            }
 
             Console.Read();
         }
