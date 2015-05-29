@@ -16,7 +16,7 @@ namespace UALib
 
     public class Import
     {
-        string ImportPath = @".\ImportFiles" ;
+        string ImportPath = @".\ImportFiles\Labels" ;
 
         public List<Sequence> go()
         {

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UALib", "UALib\UALib.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UA", "UA\UA.csproj", "{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAUI", "UAUI\UAUI.csproj", "{33C87E8A-0AAA-460F-8608-868A716D5D5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{423F0ED0-F09F-4FF6-9838-E41EC93A4EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C87E8A-0AAA-460F-8608-868A716D5D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C87E8A-0AAA-460F-8608-868A716D5D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C87E8A-0AAA-460F-8608-868A716D5D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C87E8A-0AAA-460F-8608-868A716D5D5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

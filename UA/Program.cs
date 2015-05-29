@@ -11,6 +11,9 @@ namespace UA
     {
         static void Main(string[] args)
         {
+            var dict = new Dictionary();
+            dict.go();
+
             var seqs = new Import().go();
 
             Console.WriteLine(String.Format("Imported {0} files:", seqs.Count()));
@@ -50,6 +53,7 @@ namespace UA
                     }
                 }
 
+                //Frequency of bits
                 Console.WriteLine();
                 title = "Bit counts:";
                 Console.WriteLine(title);
@@ -81,9 +85,12 @@ namespace UA
                 Console.WriteLine(title);
                 for (int i = 1; i <= 4; i++)
                 {
-                    //Get the average number of milliseconds
-                    double ms = seq.Segments.SelectMany(x => x.Purrs).Where(x => x.Identifer == i)
-                        .Select(x => new TimeSpan(x.End.Ticks - x.Start.Ticks).TotalMilliseconds).Average();
+                    double ms;
+                    var segs = seq.Segments.SelectMany(x => x.Purrs).Where(x => x.Identifer == i).ToList();
+
+                    ms = segs.Count == 0 ? 
+                        0 : 
+                        segs.Select(x => new TimeSpan(x.End.Ticks - x.Start.Ticks).TotalMilliseconds).Average();
 
                     Console.WriteLine(String.Format("bit {1}: {0}", ms, i ));
                 }
@@ -114,7 +121,42 @@ namespace UA
                             sn.Substring(0, sn.Length >= 4 ? 4 : sn.Length), i));
                     }
                     Console.WriteLine();
+
+                    
                 }
+
+                //Inter-howl timing
+                Console.WriteLine();
+                title = "Inter-howl timing (Seconds from end of one howl to the start of the next) :";
+                Console.WriteLine(title);
+
+                var iht = seq.Segments.ToList();
+                for (int i = 0; i < iht.Count; i++)
+                {
+                    Console.Write(String.Format("(h{0}) ", iht[i].Howl.Identifer.ToString()));
+                    if (i < iht.Count - 1) Console.Write(String.Format("{0}  ", new TimeSpan(iht[i + 1].Howl.Start.Ticks - iht[i].Howl.End.Ticks).TotalSeconds));
+                }
+                Console.WriteLine();
+
+                //Inter-Purr timing
+                Console.WriteLine();
+                title = "Inter-Purr timing (Seconds from end of one purr to the start of the next) :";
+                Console.WriteLine(title);
+
+                var ipt = seq.Segments.ToList();
+           
+                for (int i = 0; i < iht.Count; i++)
+                {
+                    Console.Write(String.Format("Seg {0}: ", i+1));
+                    for (int j = 0; j < ipt[i].Purrs.Count; j++)
+                    {
+                        Console.Write(String.Format("(P{0}) ", ipt[i].Purrs.ElementAt(j).Identifer));
+                        if (j < ipt[i].Purrs.Count - 1) Console.Write(String.Format("{0}  ", new TimeSpan(ipt[i].Purrs.ElementAt(j+1).Start.Ticks - ipt[i].Purrs.ElementAt(j).End.Ticks).TotalSeconds));
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+
             }
 
             Console.Read();

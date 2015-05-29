@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChabadOnCampus.DynamicLinq.DynamicLinqUserControl" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicLinqUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChabadOnCampus.DynamicLinq.ExpressionVM">
+    <Position X="1.5" Y="2.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAJAAACAAoBABIEIgAAAAAAgBAAAEAAAIQiAABAAAA=</HashCode>
+      <FileName>ExpressionList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ChabadOnCampus.DynamicLinq.ExpressionList">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAACAAQAAIAAABAA=</HashCode>
+      <FileName>ExpressionList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ChabadOnCampus.DynamicLinq.ComparisonOperators" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQRBACA=</HashCode>
+      <FileName>ExpressionList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ChabadOnCampus.DynamicLinq.CombinationOperators" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ExpressionList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
